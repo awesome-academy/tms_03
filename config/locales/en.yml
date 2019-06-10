@@ -31,3 +31,10 @@
 
 en:
   title: "Sun* Training System"
+  dashboard: "Dashboard"
+  logout: "Logout"
+  settings: "Settings"
+  profile: "Profile"
+  account: "Account"
+  footer: "Copyright &copy; Sun* Training System 2019"
+  logout_modal_message: "Select Logout below if you are ready to end your current session."

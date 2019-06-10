@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t(:title) %></title>
+    <title>Youapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
   </head>
-
-  <body>
-    <%= yield %>
+  <body id="page-top">
+    <div id="wrapper">
+      <%= render "layouts/sidebar" %>
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <%= render "layouts/topbar" %>
+          <div class="container-fluid">
+            <%= yield %>
+          </div>
+        </div>
+        <%= render "layouts/footer" %>
+      </div>
+    </div>
+    <%= render "layouts/scroll_to_top_button" %>
+    <%= render "layouts/logout_modal" %>
   </body>
 </html>
