@@ -953,3 +953,1824 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 748ms (Views: 746.8ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `role` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (15.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (2.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `role` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_id` int, `assigned_by` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `subject_id` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `task_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (13.4ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int, `subject_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (15.0ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_subject_id` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (13.6ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_course_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-10 06:35:31', '2019-06-10 06:35:31')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (30.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `role` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_id` int, `assigned_by` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `subject_id` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `task_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int, `subject_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_subject_id` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `user_course_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-10 06:49:20', '2019-06-10 06:49:20')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (28.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `role` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (8.3ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_id` int, `assigned_by` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `subject_id` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `task_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int, `subject_id` int, `status` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_subject_id` int, `status` int, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `user_course_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-10 06:54:14', '2019-06-10 06:54:14')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/pages/index.html" for ::1 at 2019-06-10 14:12:23 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.8ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 173ms (Views: 167.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-10 14:14:18 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 1681ms (Views: 1676.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-10 14:14:58 +0700
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:15:00 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 87.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:17:15 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.9ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:17:41 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:17:51 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.8ms)
+  Rendered layouts/_logout_modal.html.erb (1.1ms)
+Completed 200 OK in 73ms (Views: 70.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:18:00 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (1.4ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:19:05 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.9ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:19:31 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:24:05 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:24:28 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:24:34 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:26:02 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/new" for ::1 at 2019-06-10 14:32:53 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/new" for ::1 at 2019-06-10 14:33:04 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (You need to supply at least one validation):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2019-06-10 14:33:27 +0700
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (You need to supply at least one validation):
+  
+app/models/user.rb:8:in `<class:User>'
+app/models/user.rb:1:in `<top (required)>'
+app/controllers/users_controller.rb:3:in `new'
+Started GET "/users/new" for ::1 at 2019-06-10 14:33:35 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.4ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 66.7ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:33:38 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b0/7ayztOQEF7jen8sYlcplvy27p6ejZyT+bjJfWwMulaYEaFYM7Q3R8Pa9eQjJAVDD5OfcMKtqEVFDHo5/zYA==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('Nguyen Thanh Tu', 'you@gmail.com', '$2a$12$9QIQgx8GtbD6gffYDOxE/uBInLnsp45h/iEOMbf7dRIlPA8HGK65K', 1, '2019-06-10 07:33:39', '2019-06-10 07:33:39')[0m
+  ↳ app/controllers/users_controller.rb:11
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:11
+Redirected to http://localhost:3000/users
+Completed 302 Found in 229ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:33:39 +0700
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (5.2.3) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.3) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.3) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.3) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-06-10 14:36:20 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:37:03 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:37:18 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:37:35 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_topbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (1.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:39:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    27:             </tr>
+    28:           </tfoot>
+    29:           <tbody>
+    30:             <% @users.each do |user| %>
+    31:               <tr>
+    32:                 <td><%= user.id %></td>
+    33:                 <td><%= user.email %></td>
+  
+app/views/users/index.html.erb:30:in `_app_views_users_index_html_erb__4218521154821413228_69943939718200'
+Started GET "/users" for ::1 at 2019-06-10 14:40:06 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:30
+  Rendered users/index.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 58.4ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:40:31 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:41:33 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:41:34 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:30
+  Rendered users/index.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.8ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:43:44 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 72.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:43:50 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rTtGF0v31j/x4k3SGe2nkwPFn6QDXHmMOjWzaShmdFhoe8wUNLfFR80jnZvPgLVpAr5DWm2cccVhCeMZlxXauw==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.7ms)
+Completed 200 OK in 305ms (Views: 74.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:43:53 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7KJLt8LXNlj0tSXrx06oyJmurs4Ts3bMeEAP21SLV14mhDHG+7k0GoUnL+Nryr/6VPGcmQ1WtM81K8SQYMJk9Q==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 302ms (Views: 77.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:47:54 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:30
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:48:06 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:48:07 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:48:09 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eTnK6sg7SyHGZB3cYqPdXfCwtOGdFdsjVn8Ly0Cub5+8eUDpt3tYWfqlzZW0zs+n8ctoH/PV02oNQ1u7/93BfA==", "user"=>{"email"=>"", "name"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_sidebar.html.erb (1.6ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 269ms (Views: 50.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:48:26 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.6ms)
+  Rendered layouts/_logout_modal.html.erb (0.9ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:48:28 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_sidebar.html.erb (0.7ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:48:29 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nJ1J6yUcxPCfhH30aPDAGneFQAV14HMRE6NkCsaqlc9Z3cPoWlzXiKNFrb2+ndLgdv6c+xsge1hInzR6edk7LA==", "user"=>{"email"=>"", "name"=>""}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 289ms (Views: 64.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:49:30 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (1.0ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:49:38 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:49:40 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:49:44 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cnDjII7g3hXYFvZT+5Yokp7fNyj0q7edlubsWjgomu63MGkj8aDNbeTXJhot+zpon6Tr1pprv9TN2rwqh1s0DQ==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_sidebar.html.erb (0.6ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 284ms (Views: 69.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:49:47 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pPuGkiCon8GdPK80zkqhqkkC9Ag27gddJLN7JFJScMZu3fzjGcadg+yupTxizraYhF3GXygLxV5p2LBvZhtDbQ==", "user"=>{"email"=>"you1@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you1@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('Nguyen Thanh Tu', 'you1@gmail.com', '$2a$12$94ke29gEYP3nzGgiWWcmcez48.mmu7tcV1i7tyfuwwsvjo7/8PfJi', 1, '2019-06-10 07:49:47', '2019-06-10 07:49:47')[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/users
+Completed 302 Found in 225ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:49:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/2" for ::1 at 2019-06-10 14:50:55 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NxVT7TYkePuO4Fqq1l9ISnftH9TuI1OAFoTH+ONhayT9MymcD0p6uf9yUKJ62194urItg/DGkYNb7wyz1yhYjw==", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 2[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+Redirected to http://localhost:3000/users
+Completed 302 Found in 18ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:50:55 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 75.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:51:20 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 52.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:51:26 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VR4ULXuhVex3MFvNxVR3bPfb1hCRv/RJgGqkBPBz+AGQXp4uBOFGlEvxi4QTOWWW9qAK7v9//ADbVvR0TwBW4g==", "user"=>{"email"=>"nguyen.thanh.tu@sun-asterisk.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nguyen.thanh.tu@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('Nguyen Thanh Tu', 'nguyen.thanh.tu@sun-asterisk.com', '$2a$12$LJgtnOdqldhRhgGV/W4Nl.OVZ.4r1mV2pAnjEEVFYZ2jl8DgrlBwS', 1, '2019-06-10 07:51:26', '2019-06-10 07:51:26')[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/users
+Completed 302 Found in 222ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:51:26 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 47.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:51:29 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.5ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:51:32 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sv3e2clBJRZb32fNEss321jqDfOTOeQ2cIxApAkrEiJ3vVTatgE2bmcet4TEpiUhWZHRDf357H8rsBDUtli8wQ==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:15
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_sidebar.html.erb (0.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 270ms (Views: 55.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 14:51:35 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HbU3ptIQ0zZgKBt84h71G0OvWAJav0PGiLU4nowHdqfXk03X637RdBG6EXROmuIpjvBqVURagcXF3vPVuE5FDA==", "user"=>{"email"=>"you2@gmail.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('Nguyen Thanh Tu', 'you2@gmail.com', '$2a$12$WWTkk8ORh4R6yn6eVpxUUe8SYNZwriz8y9BxEuYsWK5ATWY0T1v9C', 1, '2019-06-10 07:51:36', '2019-06-10 07:51:36')[0m
+  ↳ app/controllers/users_controller.rb:15
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:15
+Redirected to http://localhost:3000/users
+Completed 302 Found in 218ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:51:36 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/4" for ::1 at 2019-06-10 14:51:39 +0700
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fVYgl0IP9o/Q8jXQnk3LjNSF/vtFh0BN50YIjmyTT363cFrme2H0zaFgP9gyydy+GdrMrFtigk6qLcPFWNp81Q==", "id"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 4[0m
+  ↳ app/controllers/users_controller.rb:25
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:25
+Redirected to http://localhost:3000/users
+Completed 302 Found in 12ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:51:39 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.7ms)
+  Rendered layouts/_logout_modal.html.erb (1.1ms)
+Completed 200 OK in 58ms (Views: 54.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/index.html" for ::1 at 2019-06-10 14:51:57 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-06-10 14:51:59 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:54:37 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 14:54:54 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 70.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:54:56 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_sidebar.html.erb (1.6ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 14:55:25 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 45.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 15:01:25 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/_sidebar.html.erb (2.5ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 232ms (Views: 212.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2019-06-10 15:01:27 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:49
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 47.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/users/1" for ::1 at 2019-06-10 15:01:29 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Oue7FqueW6ayW33EMrB8FpvSC7eyNHQIPxq18Yt55t9wOv6PfBahXgnxx3CtCiug3T7pRprKPUce6X4trdTMXw==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu1"}, "commit"=>"Update User", "id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `update' for nil:NilClass):
+  
+app/controllers/users_controller.rb:29:in `update'
+Started GET "/users/1/edit" for ::1 at 2019-06-10 15:01:41 +0700
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:49
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/edit.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 70ms (Views: 52.5ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/users/1" for ::1 at 2019-06-10 15:01:43 +0700
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A0JTpwmklDOq+9krl8pyaYUS+Rs+gc/tvCP9+r/sRcjJZCnWMMqWcdtp0yM7TmVbSE3LTCBkDe7xSDaxi6V2Yw==", "user"=>{"email"=>"you@gmail.com", "name"=>"Nguyen Thanh Tu1"}, "commit"=>"Update User", "id"=>"1"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:49
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:29
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'you@gmail.com' AND `users`.`id` != 1 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:29
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE `users` SET `name` = 'Nguyen Thanh Tu1', `updated_at` = '2019-06-10 08:01:43' WHERE `users`.`id` = 1[0m
+  ↳ app/controllers/users_controller.rb:29
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:29
+Redirected to http://localhost:3000/users
+Completed 302 Found in 15ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 15:01:43 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (33.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password_digest` varchar(255), `role` int DEFAULT 2, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_id` int, `assigned_by` int, `status` int DEFAULT 0, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_by` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `subject_id` int, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `task_id` int, `status` int DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int, `subject_id` int, `status` int DEFAULT 0, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `course_subject_id` int, `status` int DEFAULT 0, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int, `user_course_id` int, `content` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-10 08:19:09', '2019-06-10 08:19:09')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (30.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_digest` varchar(255), `role` int DEFAULT 2 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `created_by` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `course_id` int NOT NULL, `assigned_by` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (9.4ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `created_by` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `subject_id` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `task_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int NOT NULL, `subject_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `course_subject_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `user_course_id` int NOT NULL, `content` text NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-10 08:22:00', '2019-06-10 08:22:00')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Started GET "/users" for ::1 at 2019-06-10 15:49:22 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_sidebar.html.erb (0.9ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 266ms (Views: 248.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 15:49:27 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 55.4ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/users" for ::1 at 2019-06-10 15:49:30 +0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zb/4w2JLLZWluu0TAtarf+RrUt4sCZPJ5deqhtiHX58I/3LAHQs+7Zl7PVrUu7mF5RCOIELJm4C+6/r2Z/TxfA==", "user"=>{"email"=>"nguyen.thanh.tu@sun-asterisk.com", "name"=>"Nguyen Thanh Tu"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'nguyen.thanh.tu@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('Nguyen Thanh Tu', 'nguyen.thanh.tu@sun-asterisk.com', '$2a$12$P96tKipI0jRwozlTldge3uBTxj/VeyWETB/rWw.qcOjgmad9iQ0FC', 1, '2019-06-10 08:49:30', '2019-06-10 08:49:30')[0m
+  ↳ app/controllers/users_controller.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:17
+Redirected to http://localhost:3000/users
+Completed 302 Found in 216ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 15:49:30 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.6ms | ActiveRecord: 0.4ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for ::1 at 2019-06-10 16:07:42 +0700
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.4ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 260ms (Views: 251.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 16:07:45 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 100ms (Views: 71.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for ::1 at 2019-06-10 16:07:47 +0700
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 51.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new" for ::1 at 2019-06-10 16:07:51 +0700
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_sidebar.html.erb (0.4ms)
+  Rendered layouts/_topbar.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
