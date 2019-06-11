@@ -41,10 +41,10 @@
           <%= t(:settings) %>
         </a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+        <%= link_to logout_path, method: :get, data: {confirm: "You sure?"}, class: "dropdown-item" do %>
           <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
           <%= t(:logout) %>
-        </a>
+        <% end %>
       </div>
     </li>
   </ul>
