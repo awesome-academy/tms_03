@@ -14,3 +14,7 @@
  *= require_self
  *= require sb-admin-2
  */
+
+ .login-form-padding {
+  padding: 180px 30px;
+ }
