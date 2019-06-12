@@ -51,3 +51,5 @@ en:
   login: "Login"
   email_address: "Email address"
   password: "Password"
+  authorize_admin_message: "Please use Admin account to view this section."
+  authorize_supervisor_message: "Please use Supervisor account to view this section."

@@ -1255,3 +1255,730 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 61ms (Views: 60.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-06-12 07:59:36 +0700
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 32ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 07:59:36 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.5ms)
+  Rendered sessions/_form.html.erb (24.0ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (29.0ms)
+Started GET "/login" for ::1 at 2019-06-12 07:59:39 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (1.7ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (5.7ms)
+Completed 200 OK in 3289ms (Views: 3288.5ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 6661ms (Views: 6660.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 07:59:50 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uFDZRXgViIqmVneJB7kglo8KWsJjXG3kMZ8AHffrV70JBe6wqKfKjTbBo2foXGleTLbOEATeN/7yw3oIa1MIqg==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 46ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 07:59:50 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (1.3ms)
+  Rendered sessions/_form.html.erb (3.3ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (9.4ms)
+Completed 200 OK in 65ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 07:59:52 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fe27NiE5vfmDEyFo3a37cxXObmRnkaTPsJ3ek7afuk7MuIzD8Yv//hOE9YYySLK71nL6tgAT/tVzwaSGKiflWQ==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 07:59:52 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.7ms)
+  Rendered sessions/_form.html.erb (3.2ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (8.7ms)
+Completed 200 OK in 67ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 07:59:53 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H/6xq/yoqJQl+0nP/7fIVyJDkYbOxcMDpPGb895cCRiuq4ZeLBrqk7VsnSEQUoGf4f8FVKlHmRlnreHmQuRWDw==", "email"=>"", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = '' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 07:59:53 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.3ms)
+  Rendered sessions/_form.html.erb (1.1ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (4.3ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:01:41 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:41 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.6ms)
+  Rendered sessions/_form.html.erb (11.6ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (15.7ms)
+Completed 200 OK in 215ms (Views: 214.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:43 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pfJ3gap6dPk6e1iluh+FJxsLmfi1WDal4aCSuneYKM1HBcdKJGWBBKDIYh18pnWcVyegaPgU7Unrt7CEPp/C9w==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 21ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:43 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.3ms)
+  Rendered sessions/_form.html.erb (0.9ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (3.1ms)
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:43 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5tVbFIt3wzKFgpwi6V2l/WrfzGXR6Zh5TmZSDzO745IEIuvfBWg2zx8xppov5FVGJvP19ZylQ5VEcXAxerwJqA==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:43 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (1.0ms)
+  Rendered sessions/_form.html.erb (3.9ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (8.1ms)
+Completed 200 OK in 70ms (Views: 69.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:44 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sTdBX09qHjNYK8igWCVj57goLUUyyx6SjUn2tLjWmohTwPGUwXXrzsKY8hienJNc9AQU1X+HxX6HXtSK8dFwsg==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:44 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.6ms)
+  Rendered sessions/_form.html.erb (2.0ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (6.4ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KlNmkcOlTaqjTP2BGB1xqvK6cfOCQ0X9YGrAgIMcer/IpNZaTbq4Vzn/xznepIERvpZIY88PnhFqfeK+yhuQhQ==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:45 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (2.7ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (5.1ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:45 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fzBRPzB8tdmKg3VkNh2xscQjqTRtB6+JTARkWO5FNqydx+H0vmNAJBAwT9zwpEEKiA+QpCBLdGVGE0Zmp0Lclg==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:45 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (1.1ms)
+  Rendered sessions/_form.html.erb (8.5ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (14.6ms)
+Completed 200 OK in 121ms (Views: 120.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:46 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HjutZ2lpXf+QYNnk95VkTX+Z5redhWIQgl2zjyM0aw/8zB2s53aoAgrT41wxLJT2M7XfJ9DJufyISpGxajOBNQ==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:46 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (2.3ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (4.6ms)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:01:46 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"369NxuA3MFfma0dJOHzpSvPOAfXpczL8BmPpqHfRv0I9WP0NbijFqnzYffH+xRnxv+I4ZaQ/6RAMdMuWPtZVeA==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:01:46 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (1.0ms)
+  Rendered sessions/_form.html.erb (5.3ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (11.0ms)
+Completed 200 OK in 110ms (Views: 109.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:02:04 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8+Ahrg991jeGsDT2dWy1hdKxEg9Ap5VUnbBunR+FXlQRF5FlgWIjyhwDDk6z1UU+np0rnw3rTriXp0yjVoK0bg==", "email"=>"admin@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:02:04 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/sidebars/_admin.html.erb (1.6ms)
+  Rendered layouts/_sidebar.html.erb (4.6ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.4ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:03:31 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 234ms (Views: 192.6ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/logout" for ::1 at 2019-06-12 08:03:35 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mpLQbW2tDfR8NvZxdPXPUwjM2ytDJuRacCL8EUsDs4x4ZWCm47L4CeaFzMmyTD/oRODiuw5qP7Z6Nd4vAgRZtg=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:03:35 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (7.0ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (9.2ms)
+Completed 200 OK in 61ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:03:36 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iZ4blyuz6iVPiAuQ0jyPnXavZqgjY49NVgPk4h4m595raatcpawf2NU7MSgUhX8mOoNfOG4vVKFcFMbcVyEN5A==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:03:36 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.5ms)
+  Rendered sessions/_form.html.erb (1.6ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (4.4ms)
+Completed 200 OK in 68ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:03:38 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6QGWR4ZAQhc2sWXSg7trqb3Al4U2vxj6KI6DcwXkcO8L9iaMCF+36qwCX2pFApsS8eyuFXvzwxYimaFNTOOa1Q==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:03:38 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (3.5ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (6.0ms)
+Completed 200 OK in 67ms (Views: 66.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:15:28 +0700
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:15:28 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.2ms)
+  Rendered sessions/_form.html.erb (7.5ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (9.2ms)
+Completed 200 OK in 175ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:15:42 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DTcuh6ZIxr6ZDm1bKX7NLcvXEUd+OeAe/bHonuHxvc8Fm56bUn1618Bc960DjHlhsBwWXchgbW8HT4QuzVd3Dg==", "email"=>"admin@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 224ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:15:42 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/sidebars/_admin.html.erb (5.4ms)
+  Rendered layouts/_sidebar.html.erb (6.2ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 85.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:15:46 +0700
+  
+ActionController::RoutingError (uninitialized constant Admin):
+  
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `block in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:8:in `without_bootsnap_cache'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:79:in `rescue in load_missing_constant'
+bootsnap (1.4.4) lib/bootsnap/load_path_cache/core_ext/active_support.rb:58:in `load_missing_constant'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.3) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.3) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.3) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.3) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (5.2.3) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.3) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-06-12 08:19:50 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (3.0ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 1351ms (Views: 1298.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:19:54 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  Rendered admin/users/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (1.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:25:36 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  Rendered admin/users/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 265ms (Views: 223.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 08:29:32 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  Rendered supervisor/users/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.6ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 265ms (Views: 225.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:31:33 +0700
+  
+ActionController::RoutingError (undefined method `before_filter' for AdminController:Class
+Did you mean?  before_action):
+  
+app/controllers/admin_controller.rb:2:in `<class:AdminController>'
+app/controllers/admin_controller.rb:1:in `<top (required)>'
+app/controllers/admin/users_controller.rb:1:in `<top (required)>'
+Started GET "/admin/users" for ::1 at 2019-06-12 08:31:44 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  Rendered admin/users/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 59ms (Views: 45.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/logout" for ::1 at 2019-06-12 08:31:48 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kV0Qcsv6HSjNeIICaSgovm2K6QbGxC/k9MkQ0C9ACJmZ8aBuP8+hQZQqGPRD2pzyFkHuHHCdopUON3xgA+bCWA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:31:48 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (3.1ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (6.8ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:31:51 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kWTQJDdF48pndDXV+l8oZBlhWdo1E9AMlm1EYTYB0UGZyGA4w3Bfoz4mryPQrZwoYqpewINKXX1skyjRGqcbgA==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 7ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:31:51 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.6ms)
+  Rendered sessions/_form.html.erb (2.4ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (5.2ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:32:01 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mfbkZfgyRz+n3ta1zzZekzKmzerApBGVKZ3Uu9G5ayiRWlR5DAf7Vv6MTEPlxOrfSW3K8Hb9nOTTY7gL/R+h6Q==", "email"=>"supervisor@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'supervisor@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 199ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:32:01 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:32:06 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorized? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:32:06 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.3ms)
+  Rendered sessions/_form.html.erb (1.3ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (3.1ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:33:49 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.5ms)
+  Rendered sessions/_form.html.erb (10.1ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (14.8ms)
+Completed 200 OK in 217ms (Views: 211.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:33:50 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1lWlkm3LIyNhkKwXQBieiDkR8jp94vCa08XPt+Q9iXPe+RWOmf6fSjjCNuFq6irEQtr1IMu7fespO6MHyJtDsg==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 30ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:33:50 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.6ms)
+  Rendered sessions/_form.html.erb (2.0ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (6.1ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:33:51 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aOhWiv806B3K4o0hkQ5pYsyXC6g93Uf39/y5OFhcD49gROaWCwFUdJOwF9e7/N0ut1wMsouEyoYNAtWIdPrFTg==", "email"=>"you2@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'you2@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/login
+Completed 302 Found in 6ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:33:51 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.6ms)
+  Rendered sessions/_form.html.erb (2.0ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (4.6ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 08:34:11 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5Lvk0PpSNtQPDeNxf9+IJYhLOC3hfMe7RHKsCGrzH5LsF1TMDmeKvVZfeYdVLTxp84A/N1clSsq+jMC4RlXVUw==", "email"=>"admin@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 204ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 08:34:11 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (1.7ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 08:34:16 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  Rendered admin/users/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 49.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 08:34:21 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  Rendered supervisor/users/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 08:34:43 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Filter chain halted as :authorized? rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 08:34:43 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.4ms)
+  Rendered sessions/_form.html.erb (0.9ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (3.4ms)
+Completed 200 OK in 50ms (Views: 49.5ms | ActiveRecord: 0.0ms)
+
+

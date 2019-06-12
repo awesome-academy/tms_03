@@ -1,11 +1,10 @@
 module SessionsHelper
   def current_user
-    if session[:current_user_id]
-      @current_user ||= User.find_by(id: session[:current_user_id])
-    end
+    return unless session[:current_user_id]
+    @current_user ||= User.find_by(id: session[:current_user_id])
   end
 
-  def log_in(user)
+  def log_in user
     session[:current_user_id] = user.id
   end
 
