@@ -1,0 +1,31 @@
+<h1>Create new supervisor account</h1>
+<div class="row">
+  <div class="col-lg-6">
+    <!-- Basic Card Example -->
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary"><%= t("admin.create_account") %></h6>
+      </div>
+      <div class="card-body">
+        <% if @user.errors.any? %>
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li class="text-danger"><%= msg %></li>
+            <% end %>
+          </ul>
+        <% end %>
+        <%= form_with model: @user, url: admin_users_path, local: true, class: "user" do |f| %>
+          <div class="form-group">
+            <%= f.email_field :email, class: "form-control form-control-user", placeholder: t(:email_address) %>
+          </div>
+          <div class="form-group">
+            <%= f.text_field :name, class: "form-control form-control-user", placeholder: t(:supervisor_name) %>
+          </div>
+          <div class="form-group">
+            <%= f.submit class: "btn btn-primary btn-user btn-block" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
