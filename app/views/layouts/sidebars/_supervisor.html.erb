@@ -1,13 +1,26 @@
 <li class="nav-item">
+  <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseTwo">
+    <i class="fas fa-fw fa-cog"></i>
+    <span><%= t("trainee") %></span>
+  </a>
+  <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div class="bg-white py-2 collapse-inner rounded">
+      <h6 class="collapse-header"><%= t(:operations) %></h6>
+      <%= link_to t(:create_accounts), new_supervisor_user_path, class: "collapse-item" %>
+      <%= link_to t(:account_list), supervisor_users_path, class: "collapse-item" %>
+    </div>
+  </div>
+</li>
+<li class="nav-item">
   <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
     <i class="fas fa-fw fa-cog"></i>
-    <span><%= t(:supervisor) %></span>
+    <span><%= t("supervisor.course") %></span>
   </a>
   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
     <div class="bg-white py-2 collapse-inner rounded">
       <h6 class="collapse-header"><%= t(:operations) %></h6>
-      <%= link_to t(:create_accounts), "#", class: "collapse-item" %>
-      <%= link_to t(:account_list), "#", class: "collapse-item" %>
+      <%= link_to t("supervisor.create_course"), new_supervisor_course_path, class: "collapse-item" %>
+      <%= link_to t("supervisor.course_list"), supervisor_courses_path, class: "collapse-item" %>
     </div>
   </div>
 </li>

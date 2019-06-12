@@ -1,0 +1,12 @@
+<tr>
+  <td><%= course_counter+1 %></td>
+  <td><%= course.title %></td>
+  <td><%= course.description %></td>
+  <td><%= course.creator.name %></td>
+  <td><%= l course.created_at, format: :short %></td>
+  <td><%= l course.updated_at, format: :short %></td>
+  <td>
+    <%= link_to t(:edit), edit_supervisor_course_path(course) %>
+    <%= link_to t(:delete), [:supervisor, course], method: :delete, data: {confirm: t(:are_you_sure)} %>
+  </td>
+</tr>
