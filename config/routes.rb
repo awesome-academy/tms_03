@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   namespace :supervisor do
     resources :users, except: [:show, :edit, :update]
-    resources :courses
+    resources :courses, :subjects
   end
   namespace :admin do
     resources :users
