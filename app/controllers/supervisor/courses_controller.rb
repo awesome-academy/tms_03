@@ -28,7 +28,7 @@ class Supervisor::CoursesController < SupervisorController
 
   def update
     if @course.update(course_params)
-      flash[:success] = t(:course_updated)
+      flash[:success] = t(:updated, resource: Course.name)
       redirect_to supervisor_courses_path
     else
       false[:danger] = t(:wrong_msg)

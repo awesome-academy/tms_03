@@ -1,0 +1,20 @@
+<!-- Basic Card Example -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary"><strong><%= t(:course_name) %>: </strong><%= @course.title %></h6>
+  </div>
+  <div class="card-body">
+    <p>
+      <strong><%= t(:description) %>:</strong>
+      <%= @course.description %>
+    </p>
+    <p>
+      <strong><%= t(:created_by) %>:</strong>
+      <%= @course.creator.name %>
+    </p>
+    <hr>
+    <p>
+      <strong><%= t(:subject_list) %></strong>
+    </p>
+  </div>
+</div>
