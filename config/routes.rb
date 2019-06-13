@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   post "/login", to: "sessions#create"
   get "/logout", to: "sessions#destroy"
   namespace :supervisor do
-    resources :users
+    resources :users, except: [:show, :edit, :update]
+    resources :courses
   end
   namespace :admin do
     resources :users

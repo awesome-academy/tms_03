@@ -5326,3 +5326,1956 @@ Processing by Admin::UsersController#index as HTML
 Completed 200 OK in 81ms (Views: 70.5ms | ActiveRecord: 4.6ms)
 
 
+Started GET "/" for ::1 at 2019-06-12 16:09:24 +0700
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.9ms)
+  Rendered layouts/_topbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (0.5ms)
+Completed 200 OK in 446ms (Views: 412.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2019-06-12 16:09:29 +0700
+Processing by Admin::UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/new.html.erb within layouts/application
+  Rendered admin/users/new.html.erb within layouts/application (26.4ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 82.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 16:09:30 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [15 times] (13.3ms)
+  Rendered admin/users/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.3ms)
+  Rendered layouts/_logout_modal.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 55.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2019-06-12 16:09:32 +0700
+Processing by Admin::UsersController#new as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/new.html.erb within layouts/application
+  Rendered admin/users/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/sidebars/_admin.html.erb (2.2ms)
+  Rendered layouts/_sidebar.html.erb (4.6ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 68.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-12 16:09:34 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [15 times] (11.7ms)
+  Rendered admin/users/index.html.erb within layouts/application (17.8ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 78.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/logout" for ::1 at 2019-06-12 16:09:42 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"j+ylJB1MznPpViPe6g+P607HjeM+mJ+M/zrrj78pQukgoldOC9bhIYaPAO6vmeJiPIkCU5bpDBcZeOfSa0jAZA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for ::1 at 2019-06-12 16:09:42 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (1.2ms)
+  Rendered sessions/_form.html.erb (5.1ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (13.2ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-12 16:10:01 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o6nLsCxEyciA2HP+DB4N32H7RPg1UlZgPgdsg4I/Q0gM5znaOt7mmu8BUM5JiGBWE7XLSJ0jxfvYRWDeVl7BxQ==", "email"=>"supervisor@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'supervisor@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 203ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:01 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (2.3ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:04 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:06 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 57.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:35 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (2.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 67.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:36 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-12 16:10:37 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.0ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (36.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_development`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `myapp_test`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE DATABASE `myapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE `myapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('7864839756650184315', 0)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20190610062657)
+  [1m[35m (9.5ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `email` varchar(255) NOT NULL, `password_digest` varchar(255), `role` int DEFAULT 2 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062657_create_users.rb:3
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20190610062657_create_users.rb:11
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062657')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourses (20190610062738)
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `created_by` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610062738_create_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610062738')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserCourses (20190610063158)
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE `user_courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `course_id` int NOT NULL, `assigned_by` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063158_create_user_courses.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063158')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSubjects (20190610063225)
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE TABLE `subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `created_by` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063225_create_subjects.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063225')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTasks (20190610063242)
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE `tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255) NOT NULL, `subject_id` int NOT NULL, `description` text, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063242_create_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063242')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserTasks (20190610063329)
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE `user_tasks` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `task_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063329_create_user_tasks.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063329')[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateCourseSubjects (20190610063353)
+  [1m[35m (7.5ms)[0m  [1m[35mCREATE TABLE `course_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `course_id` int NOT NULL, `subject_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063353_create_course_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063353')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateUserSubjects (20190610063429)
+  [1m[35m (8.9ms)[0m  [1m[35mCREATE TABLE `user_subjects` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `course_subject_id` int NOT NULL, `status` int DEFAULT 0 NOT NULL, `deadline` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063429_create_user_subjects.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063429')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateReports (20190610063455)
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE `reports` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `user_id` int NOT NULL, `user_course_id` int NOT NULL, `content` text NOT NULL, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20190610063455_create_reports.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20190610063455')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2019-06-12 16:20:34', '2019-06-12 16:20:34')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7864839756650184315')[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'admin@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:1
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('admin', 'admin@sun-asterisk.com', '$2a$12$A6mfAgjUqwuC0H5YUURGtequrZG2hLqeKFxBn.NuOCjWciTuW7LMe', 0, '2019-06-12 16:20:38', '2019-06-12 16:20:38')[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:1
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor', 'supervisor@sun-asterisk.com', '$2a$12$7KYK1GP1lv2CuBst3cCNY.tDS5CpATK8qthdfO2u8BeHGc1B6/b8S', 1, '2019-06-12 16:20:39', '2019-06-12 16:20:39')[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor0@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor0', 'supervisor0@sun-asterisk.com', '$2a$12$YSt1TzuclcgbFXQGQDj8M.d1GBS/FcA8pNQXdUjjoSzsVjUwK9ur2', 1, '2019-06-12 16:20:39', '2019-06-12 16:20:39')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor1@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor1', 'supervisor1@sun-asterisk.com', '$2a$12$QKtInTk3.JnLwgW79W/lWuamkGn9R8G211y6TwGFf4NU62WUgsMEm', 1, '2019-06-12 16:20:39', '2019-06-12 16:20:39')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor2@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor2', 'supervisor2@sun-asterisk.com', '$2a$12$uz62c5eUxiJhCXTsZ8712e.CKodlVSKnFswSHtpvtw/KbNP9fviHy', 1, '2019-06-12 16:20:39', '2019-06-12 16:20:39')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor3@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor3', 'supervisor3@sun-asterisk.com', '$2a$12$dApWoOr5vE3RJVhB.FYogeJ7UixRSxXbHOrjepGUd0sKZBmP1op7O', 1, '2019-06-12 16:20:39', '2019-06-12 16:20:39')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor4@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor4', 'supervisor4@sun-asterisk.com', '$2a$12$djhBcE8GvGWm/xxHlW26MepLzOk6I0m9Bp..dbPSc2e04.e.CY0Me', 1, '2019-06-12 16:20:40', '2019-06-12 16:20:40')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor5@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor5', 'supervisor5@sun-asterisk.com', '$2a$12$sZx77Gkj7MKWHsnEklFGHuzy7zhb2quYWmPueczQNJqjgbGZr7FW2', 1, '2019-06-12 16:20:40', '2019-06-12 16:20:40')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor6@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor6', 'supervisor6@sun-asterisk.com', '$2a$12$VZPjXitw.WBH//DHPaAPweivMR9/xlAaP6c5ND/jD3Afzy23xemxS', 1, '2019-06-12 16:20:40', '2019-06-12 16:20:40')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor7@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor7', 'supervisor7@sun-asterisk.com', '$2a$12$zePGasC3GCGf.61C64eVd.7AfdZ3zg7IB1sWXcGsS8.8bZFiAjsr6', 1, '2019-06-12 16:20:40', '2019-06-12 16:20:40')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor8@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor8', 'supervisor8@sun-asterisk.com', '$2a$12$uBBPzNS1rsigK3mCjRtF9egvBTUvD70d5aWvNfAYVDEC6xliBo08K', 1, '2019-06-12 16:20:40', '2019-06-12 16:20:40')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor9@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor9', 'supervisor9@sun-asterisk.com', '$2a$12$7dpGGhn6IoklyAtSuotnaOwyaYc8sY7.XQRQDGWPX65TZXGbTNkG.', 1, '2019-06-12 16:20:41', '2019-06-12 16:20:41')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor10@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor10', 'supervisor10@sun-asterisk.com', '$2a$12$c6F5lm6IgWL7KAyRlBKSduju78bgI30YtBv2wMcfn5Yz9ydN4/CpS', 1, '2019-06-12 16:20:41', '2019-06-12 16:20:41')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor11@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor11', 'supervisor11@sun-asterisk.com', '$2a$12$2HldMN23XyLGMpO5i8aw/OlBJP6qEKvnhC/o2ew9b7Olz4hk3g0f2', 1, '2019-06-12 16:20:41', '2019-06-12 16:20:41')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor12@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor12', 'supervisor12@sun-asterisk.com', '$2a$12$siMjz2/vnZTKiXJGEoreC.OdPR5EOPZeLSTv8sb8WV2h0LljbWNq2', 1, '2019-06-12 16:20:41', '2019-06-12 16:20:41')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor13@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor13', 'supervisor13@sun-asterisk.com', '$2a$12$06byJr/Pyxr4fLQ470ea2uTnW69NAfZ.tkpTyzBCKrwL.cGBzLyTa', 1, '2019-06-12 16:20:41', '2019-06-12 16:20:41')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor14@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor14', 'supervisor14@sun-asterisk.com', '$2a$12$RzLx9.TwbeoBWKe2OrgSguJT7fptBzWeM8N60Br65KenZAn8CCzxu', 1, '2019-06-12 16:20:42', '2019-06-12 16:20:42')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor15@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor15', 'supervisor15@sun-asterisk.com', '$2a$12$HLMgz5zsCU1bpjwgx4EaT.sDttzyrA.Wxq0Bvnl/nywxy6d05NKXC', 1, '2019-06-12 16:20:42', '2019-06-12 16:20:42')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor16@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor16', 'supervisor16@sun-asterisk.com', '$2a$12$IEZjW/W6ZbYoNKHbO.tFkO7ThhejBg1MOE/NNp/yjG2i4bs2lf6My', 1, '2019-06-12 16:20:42', '2019-06-12 16:20:42')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor17@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor17', 'supervisor17@sun-asterisk.com', '$2a$12$pEeIG7ISRbGbPJmUQFUeSOiUDLhkocJySmZJA4FoUrDjSkEk0xozO', 1, '2019-06-12 16:20:42', '2019-06-12 16:20:42')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor18@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor18', 'supervisor18@sun-asterisk.com', '$2a$12$TcOw9W2tWffJSHY9Rv2cDOtTqyK7OXOvnuuh.p6t7uV16oZvIg3V2', 1, '2019-06-12 16:20:42', '2019-06-12 16:20:42')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor19@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor19', 'supervisor19@sun-asterisk.com', '$2a$12$wrYs9PnZB1RiHV9DpQndKO3fTpYepNRDxubFpCelV1h843AWF9Uxi', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor20@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor20', 'supervisor20@sun-asterisk.com', '$2a$12$C0owdHhEerFbd.goCtVyTOThLGyaroL8TOppdwwKQu/cediNivNPi', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor21@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor21', 'supervisor21@sun-asterisk.com', '$2a$12$1asFTCYBAyGxdot/n6Ybu.wd7o3UutD.esr6dNdDD1bY26VULoG4K', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor22@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor22', 'supervisor22@sun-asterisk.com', '$2a$12$a83rWYRRZK1wh2doHUXUVu/bvGA18veWPR9srJlgrLmNJN/uXrFwW', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor23@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor23', 'supervisor23@sun-asterisk.com', '$2a$12$/aSH7o.kF0/tIvtTpe5gcurbsaqWWOAJvzKORP3c8PxMdV93cUp8.', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor24@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor24', 'supervisor24@sun-asterisk.com', '$2a$12$CG9KxTbDheyaSdguFqwcT.GFCA.mGb8s8TVguZfRrYYIdLXj.UsMe', 1, '2019-06-12 16:20:43', '2019-06-12 16:20:43')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor25@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor25', 'supervisor25@sun-asterisk.com', '$2a$12$Fj6.7oCbqmMlA/I75rvaZeKZBLNxZhlt2tBJHVGQagcJEbGjj0t9O', 1, '2019-06-12 16:20:44', '2019-06-12 16:20:44')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor26@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor26', 'supervisor26@sun-asterisk.com', '$2a$12$X5ocFtSNWFJShtJ9S6mhq.mXtzZq.9n.mjDDd4TljtM1lSDeid7wK', 1, '2019-06-12 16:20:44', '2019-06-12 16:20:44')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor27@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor27', 'supervisor27@sun-asterisk.com', '$2a$12$L3xiAhJ0TI1RQS04Wed4hukd8Etdqc2xwBYyiRJer33kGN9dPAlRC', 1, '2019-06-12 16:20:44', '2019-06-12 16:20:44')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor28@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor28', 'supervisor28@sun-asterisk.com', '$2a$12$WP2muMkPkEBp7llpnfmHN.w3x2DW8qfkoS/8KCE2SXVWWzFeaY6OC', 1, '2019-06-12 16:20:44', '2019-06-12 16:20:44')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor29@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor29', 'supervisor29@sun-asterisk.com', '$2a$12$ZmRx.xiGtY.HnTzmgP/heu4RlBULF8cImu4lBHoeV8b39pMDbCsfe', 1, '2019-06-12 16:20:44', '2019-06-12 16:20:44')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor30@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor30', 'supervisor30@sun-asterisk.com', '$2a$12$AMUwUw2AUdJ3uD5NJWWu5.SUTilTN1ijwkQ7YUP25PctkMGVfypT2', 1, '2019-06-12 16:20:45', '2019-06-12 16:20:45')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor31@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor31', 'supervisor31@sun-asterisk.com', '$2a$12$JBDQSI01mTEqbWozAKot/.rCP3dpSmMyQ.f40i9EXfltVCpZJdAB.', 1, '2019-06-12 16:20:45', '2019-06-12 16:20:45')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor32@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor32', 'supervisor32@sun-asterisk.com', '$2a$12$RjHDlLNyuJRvSplwb5JRyOSEhKpg4EjVQY4OXX8rG3VuaryX6Y4ou', 1, '2019-06-12 16:20:45', '2019-06-12 16:20:45')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor33@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor33', 'supervisor33@sun-asterisk.com', '$2a$12$FV.Ee04U6dLqdVpv4Pco4e63.ZGp3nA9bJkBXVxsT3HODNPdYfO.C', 1, '2019-06-12 16:20:45', '2019-06-12 16:20:45')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor34@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor34', 'supervisor34@sun-asterisk.com', '$2a$12$nQlHjYeXC0kESZO0Or.Rt.Q74J9xwdZXAmXJeOPD7w6F92kg/J9yO', 1, '2019-06-12 16:20:45', '2019-06-12 16:20:45')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor35@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor35', 'supervisor35@sun-asterisk.com', '$2a$12$u6piqvXp16D9z55ch3hnzu5xoSfy4JnuJIyGPRxAanJOhaF9CnO.u', 1, '2019-06-12 16:20:46', '2019-06-12 16:20:46')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor36@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor36', 'supervisor36@sun-asterisk.com', '$2a$12$Rv4R0QZ5QnRDpFqlbQJruuPOu5eM.CjeGKaI9jnldQeA5./EHk9Pm', 1, '2019-06-12 16:20:46', '2019-06-12 16:20:46')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor37@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor37', 'supervisor37@sun-asterisk.com', '$2a$12$xdTArbUOfCwoFNvw1Jr60u4f9P177Ff2gpx2hUfskSC9QUKOaCYUW', 1, '2019-06-12 16:20:46', '2019-06-12 16:20:46')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor38@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor38', 'supervisor38@sun-asterisk.com', '$2a$12$WoSNb3JSu1GDFDwaAgj7/OMLIOKU1or3lFLRpfLtiL6IesjX0BfZ.', 1, '2019-06-12 16:20:46', '2019-06-12 16:20:46')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor39@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor39', 'supervisor39@sun-asterisk.com', '$2a$12$p.5iKehHx9QOw01RrIxOyuzrSHwaldpXhCGcUrCwez6g0VCGSv9Ou', 1, '2019-06-12 16:20:46', '2019-06-12 16:20:46')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor40@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor40', 'supervisor40@sun-asterisk.com', '$2a$12$74ah/wOfC/avcKe.iqCnae/5SSB4eUIBj9VE.0kAwTYzfa2VPxAWG', 1, '2019-06-12 16:20:47', '2019-06-12 16:20:47')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor41@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor41', 'supervisor41@sun-asterisk.com', '$2a$12$7AU/rBWLbzhJGQYaBygXRuhrVft63g1maIhNLtSfKg/5AKJAWIvVO', 1, '2019-06-12 16:20:47', '2019-06-12 16:20:47')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor42@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor42', 'supervisor42@sun-asterisk.com', '$2a$12$e8yPK7ZHx1vtNhuTyGyE6Oci0MV/8KJDPSv0.Qd2V1tBxZTXsjkSS', 1, '2019-06-12 16:20:47', '2019-06-12 16:20:47')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor43@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor43', 'supervisor43@sun-asterisk.com', '$2a$12$YQlR6jKiB0Y0Ygj9olk13uFBKBLq4uGfNyZ3.Lk0VdRYmTfILXec6', 1, '2019-06-12 16:20:47', '2019-06-12 16:20:47')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor44@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor44', 'supervisor44@sun-asterisk.com', '$2a$12$Cx8cAWvcOvDmzvJjfSQ7i.jOiCWTCzSnie7v/80w7QN4UcRAVR/Hq', 1, '2019-06-12 16:20:47', '2019-06-12 16:20:47')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor45@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor45', 'supervisor45@sun-asterisk.com', '$2a$12$zWjluT1fpCwFrl1aqfS5tuzA7qJwWfg9Zbw08paMs/JozbR52rv2S', 1, '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor46@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor46', 'supervisor46@sun-asterisk.com', '$2a$12$jE75OvgCbMCuvyRRgs0gLePLm5/IWLjOdUV6Y8LICVuSSQtPSJRZK', 1, '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor47@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor47', 'supervisor47@sun-asterisk.com', '$2a$12$iJ1YJfCUkCohrdD4eyJR.uezpYo0plKvppDlRcXB.ZXoS0sl/0gJ.', 1, '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor48@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor48', 'supervisor48@sun-asterisk.com', '$2a$12$I1i3sBGKW7vCmZ7ODS4rRODzwIVvJnq2NR6h1dwRU2D8RR5jSMuAC', 1, '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'supervisor49@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:17
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `role`, `created_at`, `updated_at`) VALUES ('supervisor49', 'supervisor49@sun-asterisk.com', '$2a$12$uZJcCu8KkA4rjCUEnAyspeaafnqKTcruPFN1k5TUyEm.PwmZ7CRJS', 1, '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:17
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'trainee@sun-asterisk.com' LIMIT 1[0m
+  ↳ db/seeds.rb:25
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`) VALUES ('trainee', 'trainee@sun-asterisk.com', '$2a$12$en/965e/9BYzuVnH/KX81e7pBzYTYcGllN1xDv/Zn19u13G5VG65K', '2019-06-12 16:20:48', '2019-06-12 16:20:48')[0m
+  ↳ db/seeds.rb:25
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:25
+Started GET "/" for ::1 at 2019-06-12 16:20:57 +0700
+Started GET "/" for ::1 at 2019-06-12 16:20:57 +0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  Rendered pages/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.3ms)
+  Rendered layouts/_sidebar.html.erb (1.6ms)
+  Rendered layouts/_sidebar.html.erb (2.3ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_topbar.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.0ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 447ms (Views: 412.6ms | ActiveRecord: 9.1ms)
+
+
+  Rendered layouts/_logout_modal.html.erb (0.1ms)
+Completed 200 OK in 449ms (Views: 417.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:21:00 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:21:02 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 49.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:21:04 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (7.2ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (8.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (2.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 46.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:21:06 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (2.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:21:07 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (4.2ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 78.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/supervisor/courses" for ::1 at 2019-06-12 16:21:09 +0700
+Processing by Supervisor::CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zw90A9/QENVXlgWS1s+6P25MmZdQ5ecTmbyGPqYqHF2IlvezLFCF2XeDVeoHPg2zHkFeJOgppXSw7+jJJ0AaDA==", "course"=>{"title"=>"asdasd", "description"=>"asdasd"}, "commit"=>"Create Course"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/supervisor/courses_controller.rb:14
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO `courses` (`title`, `created_by`, `description`, `created_at`, `updated_at`) VALUES ('asdasd', 2, 'asdasd', '2019-06-12 16:21:09', '2019-06-12 16:21:09')[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:14
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:14
+Redirected to http://localhost:3000/supervisor/courses
+Completed 302 Found in 36ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:21:09 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (2.5ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 59.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/supervisor/courses/1/edit" for ::1 at 2019-06-12 16:21:11 +0700
+Processing by Supervisor::CoursesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:47
+  Rendering supervisor/courses/edit.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (2.0ms)
+  Rendered supervisor/courses/edit.html.erb within layouts/application (3.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/supervisor/courses/1" for ::1 at 2019-06-12 16:21:15 +0700
+Processing by Supervisor::CoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x+LZH2/jU9gfrzVmE9eLFcNgmXzQmLFxRK6WPhx0Z6sI0V/H+6Xo5wlUpnH+ZY2rEwGS6L9jws+KPmTO2MlNHg==", "course"=>{"title"=>"Ruby", "description"=>"asdasd"}, "commit"=>"Update Course", "id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT  `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:26
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/supervisor/courses_controller.rb:26
+  [1m[36mCourse Update (1.3ms)[0m  [1m[33mUPDATE `courses` SET `title` = 'Ruby', `updated_at` = '2019-06-12 16:21:15' WHERE `courses`.`id` = 1[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:26
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:26
+Redirected to http://localhost:3000/supervisor/courses
+Completed 302 Found in 16ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:21:15 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (3.9ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (7.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:21:17 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 56.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:21:19 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (16.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:21:21 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.1ms)
+  Rendered layouts/_sidebar.html.erb (2.1ms)
+  Rendered layouts/_topbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 55.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:21:24 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (12.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 72ms (Views: 67.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:22:22 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+  Rendered layouts/_topbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 64.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:23:00 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (30.0ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (1.9ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 73.4ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:23:22 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.7ms)
+  Rendered layouts/_logout_modal.html.erb (1.6ms)
+Completed 200 OK in 80ms (Views: 74.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:23:24 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (15.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 59.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:23:31 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (2.9ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 54ms (Views: 44.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:23:32 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT `users`.* FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:20
+  Rendered supervisor/users/index.html.erb within layouts/application (25.0ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 97ms (Views: 89.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:23:34 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 83ms (Views: 77.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:25:30 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (2.0ms)
+  Rendered layouts/_topbar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 47.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:25:33 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [15 times] (8.6ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 61ms (Views: 56.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/supervisor/users?page=2" for ::1 at 2019-06-12 16:25:35 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 15[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [15 times] (13.0ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (27.1ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 80ms (Views: 72.0ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/supervisor/users?page=3" for ::1 at 2019-06-12 16:25:35 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 30[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [15 times] (13.7ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (26.8ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (3.2ms)
+  Rendered layouts/_topbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 86ms (Views: 78.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:25:36 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (11.1ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (23.8ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 76ms (Views: 68.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:23 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (3.5ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (11.1ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (3.1ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 84ms (Views: 53.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:25 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (2.6ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (10.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:25 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (4.1ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (11.9ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:25 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (2.9ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 51ms (Views: 45.9ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:25 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (3.5ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (10.1ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 53.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:25 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (8.3ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (15.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (1.8ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 63.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/supervisor/users?page=4" for ::1 at 2019-06-12 16:26:46 +0700
+Processing by Supervisor::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [8 times] (2.8ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (17.5ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:26:54 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [15 times] (11.3ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (17.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 54.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/supervisor/users/new" for ::1 at 2019-06-12 16:26:55 +0700
+Processing by Supervisor::UsersController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/new.html.erb within layouts/application
+  Rendered supervisor/users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 53ms (Views: 46.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/supervisor/users" for ::1 at 2019-06-12 16:26:57 +0700
+Processing by Supervisor::UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/supervisor/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/supervisor/users/index.html.erb:21
+  Rendered collection of supervisor/users/_user.html.erb [15 times] (12.0ms)
+  Rendered supervisor/users/index.html.erb within layouts/application (17.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (2.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 73.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:26:59 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (1.4ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (2.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 47.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:27:01 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (6.9ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (6.7ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/supervisor/courses/1/edit" for ::1 at 2019-06-12 16:27:07 +0700
+Processing by Supervisor::CoursesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/supervisor/courses_controller.rb:47
+  Rendering supervisor/courses/edit.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (1.4ms)
+  Rendered supervisor/courses/edit.html.erb within layouts/application (2.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.8ms)
+  Rendered layouts/_sidebar.html.erb (3.5ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:20 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (2.1ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.2ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:21 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.8ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (3.7ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 51.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:21 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (1.9ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (2.6ms)
+  Rendered layouts/_topbar.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 49.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:21 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (3.6ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 57ms (Views: 52.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:21 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (3.3ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:30 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (3.5ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:28:57 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (2.7ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (2.5ms)
+  Rendered layouts/_topbar.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 73ms (Views: 57.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:29:03 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (1.4ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.6ms)
+  Rendered layouts/_sidebar.html.erb (2.0ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 47.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-12 16:29:05 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT `courses`.* FROM `courses`[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (6.6ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.4ms)
+  Rendered layouts/_sidebar.html.erb (3.2ms)
+  Rendered layouts/_topbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 75.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-12 16:29:06 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (2.8ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (4.8ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (1.5ms)
+  Rendered layouts/_topbar.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.6ms)
+  Rendered layouts/_logout_modal.html.erb (0.8ms)
+Completed 200 OK in 74ms (Views: 68.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-06-13 07:53:41 +0700
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/nguyen.thanh.tu/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :require_login rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-06-13 07:53:41 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.5ms)
+  Rendered sessions/_form.html.erb (11.2ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (18.8ms)
+Completed 200 OK in 423ms (Views: 421.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-13 07:53:56 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uJzM5OJ7Ugw2sn9yvnDNDVq6BEZIBs2degYvWDACsaPgWMBkhgimtdqFU3jnsovNwAlLcMpDhFlEY05tR8WCaw==", "email"=>"admin@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'admin@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 258ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2019-06-13 07:53:56 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.5ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.9ms)
+  Rendered layouts/_topbar.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.6ms)
+Completed 200 OK in 88ms (Views: 85.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/users/new" for ::1 at 2019-06-13 07:53:59 +0700
+Processing by Admin::UsersController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/new.html.erb within layouts/application
+  Rendered admin/users/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.5ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_topbar.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.4ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/users" for ::1 at 2019-06-13 07:54:00 +0700
+Processing by Admin::UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [15 times] (5.9ms)
+  Rendered admin/users/index.html.erb within layouts/application (11.5ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admin/users?page=2" for ::1 at 2019-06-13 07:54:03 +0700
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 15[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [15 times] (5.2ms)
+  Rendered admin/users/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (3.3ms)
+  Rendered layouts/_topbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.1ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/users?page=3" for ::1 at 2019-06-13 07:54:03 +0700
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 30[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [15 times] (7.7ms)
+  Rendered admin/users/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (1.4ms)
+Completed 200 OK in 61ms (Views: 55.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin/users?page=4" for ::1 at 2019-06-13 07:54:04 +0700
+Processing by Admin::UsersController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering admin/users/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ app/views/admin/users/index.html.erb:8
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`name` ASC, `users`.`created_at` DESC LIMIT 15 OFFSET 45[0m
+  ↳ app/views/admin/users/index.html.erb:21
+  Rendered collection of admin/users/_user.html.erb [8 times] (4.7ms)
+  Rendered admin/users/index.html.erb within layouts/application (14.2ms)
+  Rendered layouts/sidebars/_admin.html.erb (0.4ms)
+  Rendered layouts/_sidebar.html.erb (1.1ms)
+  Rendered layouts/_topbar.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.5ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 72.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/logout" for ::1 at 2019-06-13 07:54:06 +0700
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"v2aT2Kr0MzShQ7lr1XT7cBdv2V+0XV0W8b3Ls6uDVm7nop9YzofHjU10lWGMtr2wjdyWaTYYFNLP2KqG3ERlpg=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+Redirected to http://localhost:3000/login
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for ::1 at 2019-06-13 07:54:06 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/login_layout
+  Rendered layouts/utils/_flash.html.erb (0.5ms)
+  Rendered sessions/_form.html.erb (2.6ms)
+  Rendered sessions/new.html.erb within layouts/login_layout (5.5ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-06-13 07:54:15 +0700
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qmqj41w/M8aa+6K/6zRwNnDecPcVpi2ea7nqlGwrx/Qarq9jOEzHf3bMjrWy9jb26m0/wZfjZFpV3IuhG+z0PA==", "email"=>"supervisor@sun-asterisk.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'supervisor@sun-asterisk.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-06-13 07:54:15 +0700
+Processing by PagesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.2ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (2.5ms)
+  Rendered layouts/_sidebar.html.erb (4.4ms)
+  Rendered layouts/_topbar.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/supervisor/courses/new" for ::1 at 2019-06-13 07:54:17 +0700
+Processing by Supervisor::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/new.html.erb within layouts/application
+  Rendered supervisor/courses/_form.html.erb (4.7ms)
+  Rendered supervisor/courses/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (2.5ms)
+  Rendered layouts/_topbar.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.5ms)
+  Rendered layouts/_logout_modal.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 48.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/supervisor/courses" for ::1 at 2019-06-13 07:54:19 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (1.6ms)[0m  [1m[34mSELECT  `courses`.* FROM `courses` ORDER BY `name` ASC, `courses`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  Rendered supervisor/courses/index.html.erb within layouts/application (8.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'name' in 'order clause': SELECT  `courses`.* FROM `courses` ORDER BY `name` ASC, `courses`.`created_at` DESC LIMIT 15 OFFSET 0):
+    18:             </tr>
+    19:           </thead>
+    20:           <tbody>
+    21:             <%= render @courses %>
+    22:           </tbody>
+    23:         </table>
+    24:       </div>
+  
+app/views/supervisor/courses/index.html.erb:21:in `_app_views_supervisor_courses_index_html_erb__2153395636867487139_70031070360620'
+Started GET "/supervisor/courses" for ::1 at 2019-06-13 07:55:38 +0700
+Processing by Supervisor::CoursesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/helpers/sessions_helper.rb:4
+  Rendering supervisor/courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT  `courses`.* FROM `courses` ORDER BY `courses`.`title` ASC, `courses`.`created_at` DESC LIMIT 15 OFFSET 0[0m
+  ↳ app/views/supervisor/courses/index.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/supervisor/courses/_course.html.erb:5
+  Rendered collection of supervisor/courses/_course.html.erb [1 times] (15.7ms)
+  Rendered supervisor/courses/index.html.erb within layouts/application (21.1ms)
+  Rendered layouts/sidebars/_supervisor.html.erb (1.8ms)
+  Rendered layouts/_sidebar.html.erb (2.9ms)
+  Rendered layouts/_topbar.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+  Rendered layouts/_scroll_to_top_button.html.erb (0.2ms)
+  Rendered layouts/_logout_modal.html.erb (0.2ms)
+Completed 200 OK in 82ms (Views: 70.6ms | ActiveRecord: 2.0ms)
+
+

@@ -7,5 +7,5 @@ class User < ApplicationRecord
   validates :name, presence: true
   has_secure_password
   enum role: {admin: 0, supervisor: 1, trainee: 2}
-  scope :sorted, -> { order(name: :asc, created_at: :desc)}
+  scope :sorted, ->{order(name: :asc, created_at: :desc)}
 end
