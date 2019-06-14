@@ -2,9 +2,12 @@
   <td><%= course_counter+1 %></td>
   <td><%= link_to course.title, [:supervisor, course] %></td>
   <td><%= course.description %></td>
+  <td>
+    <span class="btn btn-sm <%= course.opened? ? "btn-success" : "btn-danger"%>"><%= course.status %></span>
+  </td>
   <td><%= course.creator.name %></td>
-  <td><%= l course.created_at, format: :short %></td>
-  <td><%= l course.updated_at, format: :short %></td>
+  <td><%= l course.start_date, format: :long %></td>
+  <td><%= l course.finish_date, format: :long %></td>
   <td>
     <%= link_to t(:edit), edit_supervisor_course_path(course) %>
     <%= link_to t(:delete), [:supervisor, course], method: :delete, data: {confirm: t(:are_you_sure)} %>

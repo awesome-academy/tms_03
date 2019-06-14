@@ -1,0 +1,13 @@
+<tr>
+  <td><%= subject.title %></td>
+  <td><%= subject.name %></td>
+  <td><%= l subject.created_at, format: :short %></td>
+  <td>
+    <%= link_to supervisor_add_subjects_path(@course.id, subject.id),
+                      method: :post,
+                      remote: true,
+                      class: "btn btn-success btn-sm" do %>
+      <i class="fas fa-plus"></i>
+    <% end %>
+  </td>
+</tr>

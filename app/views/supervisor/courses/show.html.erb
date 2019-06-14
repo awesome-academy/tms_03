@@ -1,20 +1,63 @@
-<!-- Basic Card Example -->
-<div class="card shadow mb-4">
-  <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary"><strong><%= t(:course_name) %>: </strong><%= @course.title %></h6>
+<div class="row">
+  <div class="col-6">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary"><strong><%= t(:course_name) %>: </strong><%= @course.title %></h6>
+      </div>
+      <div class="card-body">
+        <p>
+          <strong><%= t(:description) %>:</strong>
+          <%= @course.description %>
+        </p>
+        <p>
+          <strong><%= t(:created_by) %>:</strong>
+          <%= @course.creator.name %>
+        </p>
+      </div>
+    </div>
+    <div class="card shadow mb-4">
+      <!-- Card Header - Accordion -->
+      <a href="#current-subjects" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+        <h6 class="m-0 font-weight-bold text-primary"><%= t(:current_subjects) %></h6>
+      </a>
+      <!-- Card Content - Collapse -->
+      <div class="collapse show" id="current-subjects">
+        <div class="card-body">
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th><%= t(:name) %></th>
+              <th><%= t(:created_by) %></th>
+              <th><%= t(:status) %></th>
+              <th><%= t(:start_date) %></th>
+              <th><%= t(:finish_date) %></th>
+              <th></th>
+            </tr>
+            <%= render partial: "/supervisor/courses/course_subject", collection: @course_subjects %>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="card-body">
-    <p>
-      <strong><%= t(:description) %>:</strong>
-      <%= @course.description %>
-    </p>
-    <p>
-      <strong><%= t(:created_by) %>:</strong>
-      <%= @course.creator.name %>
-    </p>
-    <hr>
-    <p>
-      <strong><%= t(:subject_list) %></strong>
-    </p>
+  <div class="col-6">
+    <div class="card shadow mb-4">
+      <!-- Card Header - Accordion -->
+      <a href="#available-subjects" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+        <h6 class="m-0 font-weight-bold text-primary"><%= t(:available_subjects) %></h6>
+      </a>
+      <!-- Card Content - Collapse -->
+      <div class="collapse show" id="available-subjects">
+        <div class="card-body">
+          <table class="table table-bordered table-hover">
+            <tr>
+              <th><%= t(:name) %></th>
+              <th><%= t(:created_by) %></th>
+              <th><%= t(:create_date) %></th>
+              <th></th>
+            </tr>
+            <%= render partial: "supervisor/courses/subject", collection: @subjects %>
+          </table>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
