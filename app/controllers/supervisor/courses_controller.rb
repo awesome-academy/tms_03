@@ -24,7 +24,11 @@ class Supervisor::CoursesController < SupervisorController
 
   def edit; end
 
-  def show; end
+  def show
+    @course_subjects = CourseSubject.course_subjects(@course.id)
+    @added_subject_ids = @course_subjects.pluck(:subject_id)
+    @subjects = Subject.availables(@added_subject_ids)
+  end
 
   def update
     if @course.update(course_params)
@@ -54,6 +58,7 @@ class Supervisor::CoursesController < SupervisorController
   end
 
   def course_params
-    params.require(:course).permit(:title, :description)
+    params.require(:course)
+          .permit(:title, :description, :start_date, :finish_date, :status)
   end
 end

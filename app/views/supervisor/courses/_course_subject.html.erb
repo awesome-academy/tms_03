@@ -1,0 +1,27 @@
+<tr>
+  <td><%= course_subject.subject.title %></td>
+  <td><%= course_subject.subject.creator.name %></td>
+  <td>
+    <%= link_to supervisor_update_status_path(@course.id, course_subject.subject_id),
+                    method: :patch,
+                    remote: true,
+                    class: "btn btn-sm #{course_subject.status? ? "btn-success" : "btn-danger"}" do %>
+      <i class="fas <%= course_subject.status? ? "fa-toggle-on" : "fa-toggle-off"%>"></i>
+    <% end %>
+  </td>
+  <td><%= course_subject.start_date %></td>
+  <td><%= course_subject.finish_date %></td>
+  <td>
+    <%= link_to supervisor_edit_course_subjects_path(@course.id, course_subject.subject_id),
+                          class: "btn btn-warning btn-sm" do %>
+      <i class="fas fa-edit"></i>
+    <% end %>
+    <%= link_to supervisor_remove_subjects_path(@course.id, course_subject.subject_id),
+                          method: :delete,
+                          remote: true,
+                          data: {confirm: "Are you sure?"},
+                          class: "btn btn-danger btn-sm" do %>
+      <i class="fas fa-minus"></i>
+    <% end %>
+  </td>
+</tr>

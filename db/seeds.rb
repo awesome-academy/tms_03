@@ -33,17 +33,20 @@ User.create!(
 Course.create!(
   title: "Batch22_ruby",
   description: "Lorem ipsum",
-  created_by: 2
+  created_by: 2,
+  status: 1
 )
 Course.create!(
   title: "Batch23_ruby",
   description: "Lorem ipsum",
-  created_by: 2
+  created_by: 2,
+  status: 0
 )
 Course.create!(
   title: "Batch22_php",
   description: "Lorem ipsum",
-  created_by: 2
+  created_by: 2,
+  status: 0
 )
 Subject.create!(
   title: "Git",

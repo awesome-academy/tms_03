@@ -15,7 +15,9 @@ ActiveRecord::Schema.define(version: 2019_06_10_063455) do
   create_table "course_subjects", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "course_id", null: false
     t.integer "subject_id", null: false
-    t.integer "status", default: 0, null: false
+    t.boolean "status", default: true, null: false
+    t.date "start_date", default: "2019-06-14"
+    t.date "finish_date", default: "2019-06-19"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -24,6 +26,9 @@ ActiveRecord::Schema.define(version: 2019_06_10_063455) do
     t.string "title", null: false
     t.integer "created_by", null: false
     t.text "description"
+    t.integer "status", default: 0, null: false
+    t.date "start_date", default: "2019-06-14"
+    t.date "finish_date", default: "2019-08-13"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
