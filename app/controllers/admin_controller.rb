@@ -5,7 +5,7 @@ class AdminController < ApplicationController
 
   def authorized?
     return if current_user.admin?
-    flash[:danger] = t(:authorize_admin_message)
-    redirect_to login_path
+    flash[:danger] = t :authorize_admin_message
+    sign_out_and_redirect current_user
   end
 end

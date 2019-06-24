@@ -28,6 +28,7 @@ class Supervisor::CoursesController < SupervisorController
     @course_subjects = CourseSubject.course_subjects(@course.id)
     @added_subject_ids = @course_subjects.pluck(:subject_id)
     @subjects = Subject.availables(@added_subject_ids)
+    @subjects = Subject.all if @subjects.empty?
   end
 
   def update

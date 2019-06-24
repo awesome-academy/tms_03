@@ -5,7 +5,7 @@ class SupervisorController < ApplicationController
 
   def authorized?
     return if current_user.supervisor?
-    flash[:danger] = t(:authorize_supervisor_message)
-    redirect_to login_path
+    flash[:danger] = t :authorize_supervisor_message
+    sign_out_and_redirect current_user
   end
 end

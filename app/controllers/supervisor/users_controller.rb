@@ -11,7 +11,7 @@ class Supervisor::UsersController < SupervisorController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new user_params
     @user.role = User.roles[:trainee]
     @user.password = Settings.password
     @user.password_confirmation = Settings.password
