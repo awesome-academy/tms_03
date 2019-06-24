@@ -14,11 +14,7 @@
         <div id="content">
           <%= render "layouts/topbar" %>
           <div class="container-fluid">
-            <% flash.each do |key, value| %>
-              <div class="alert alert-<%= key %>" role="alert">
-                <%= value %>
-              </div>
-            <% end %>
+            <%= render "layouts/utils/flash" %>
             <%= yield %>
           </div>
         </div>

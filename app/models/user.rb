@@ -5,7 +5,8 @@ class User < ApplicationRecord
   has_many :reports
   validates :email, presence: true, uniqueness: {case_sensitive: false}
   validates :name, presence: true
-  has_secure_password
   enum role: {admin: 0, supervisor: 1, trainee: 2}
   scope :sorted, ->{order(name: :asc, created_at: :desc)}
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable,
+    :validatable
 end
