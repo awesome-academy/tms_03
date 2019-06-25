@@ -1,6 +1,6 @@
 class SupervisorController < ApplicationController
   before_action :authorized?
-
+  load_and_authorize_resource
   private
 
   def authorized?

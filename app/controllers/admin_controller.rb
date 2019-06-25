@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
   before_action :authorized?
+  load_and_authorize_resource
 
   private
 
