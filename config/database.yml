@@ -41,6 +41,7 @@ test:
 # available as an environment variable. For example:
 #
 #   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+#   DATABASE_URL="mysql2://myaccount:password@db4free.net:3306/myapp_dev"
 #
 # You can use this database configuration with:
 #
@@ -48,7 +49,4 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: myapp_production
-  username: myapp
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  url: mysql2://myaccount:password@db4free.net:3306/myapp_dev

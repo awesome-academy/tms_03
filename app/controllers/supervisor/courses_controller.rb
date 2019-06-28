@@ -8,6 +8,9 @@ class Supervisor::CoursesController < SupervisorController
 
   def new
     @course = Course.new
+    load_subjects params[:q]
+    load_supervisors params[:supervisor_search]
+    load_trainees params[:trainee_search]
   end
 
   def create
@@ -58,8 +61,21 @@ class Supervisor::CoursesController < SupervisorController
     render plain: t(:not_found)
   end
 
-  def course_params
-    params.require(:course)
-          .permit(:title, :description, :start_date, :finish_date, :status)
+  def load_subjects param
+    @q = Subject.ransack(param)
+    @subjects = @q.result.paginate(page: params[:subject_page],
+                                   per_page: Settings.five_per_page)
+  end
+
+  def load_supervisors param
+    @qs = User.supervisor.ransack(param)
+    @supervisors = @qs.result.paginate(page: params[:supervisor_page],
+                                         per_page: Settings.five_per_page)
+  end
+
+  def load_trainees param
+    @qt = User.trainee.ransack(param)
+    @trainees = @qt.result.paginate(page: params[:trainee_page],
+                                   per_page: Settings.five_per_page)
   end
 end

@@ -1,11 +1,142 @@
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-lg-12">
+    <div class="card shadow mb-4">
+      <!-- Card Header - Accordion -->
+      <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+        <h6 class="m-0 font-weight-bold text-primary">Course</h6>
+      </a>
+      <!-- Card Content - Collapse -->
+      <div class="collapse show" id="collapseCardExample">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Subjects</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Git</li>
+                  <li class="list-group-item">MySQL</li>
+                  <li class="list-group-item">Ruby</li>
+                  <li class="list-group-item">Raiks</li>
+                  <li class="list-group-item">RSpec</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Supervisors</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Michael</li>
+                  <li class="list-group-item">John</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Trainees</h6>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">David</li>
+                  <li class="list-group-item">Robert</li>
+                  <li class="list-group-item">James </li>
+                  <li class="list-group-item">Mark</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4">
     <div class="card shadow mb-4">
       <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary"><%= t("supervisor.create_course") %></h6>
       </div>
       <div class="card-body">
         <%= render "form" %>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Subjects</h6>
+      </div>
+      <div class="card-body">
+        <%= search_form_for @q, url: new_supervisor_course_path do |f| %>
+          <div class="input-group mb-3">
+            <%= f.search_field :title_cont, class: "form-control" %>
+            <div class="input-group-append">
+              <%= f.submit "Search", class: "input-group-text" %>
+            </div>
+          </div>
+        <% end %>
+        <%= will_paginate @subjects, param_name: "subject_page" %>
+        <ul class="list-group">
+          <% @subjects.each do |subject| %>
+            <li class="list-group-item">
+              <button class = "btn btn-sm btn-success">+</button> |
+              <%= subject.title %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Supervisors</h6>
+      </div>
+      <div class="card-body">
+        <%= search_form_for @qs, url: new_supervisor_course_path,  as: :supervisor_search  do |f| %>
+          <div class="input-group mb-3">
+            <%= f.search_field :name_cont, class: "form-control" %>
+            <div class="input-group-append">
+              <%= f.submit "Search", class: "input-group-text" %>
+            </div>
+          </div>
+        <% end %>
+        <%= will_paginate @supervisors, param_name: "supervisor_page" %>
+        <ul class="list-group">
+          <% @supervisors.each do |supervisor| %>
+            <li class="list-group-item">
+              <button class = "btn btn-sm btn-success">+</button> |
+              <%= supervisor.name %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Trainees</h6>
+      </div>
+      <div class="card-body">
+        <%= search_form_for @qt, url: new_supervisor_course_path,  as: :trainee_search  do |f| %>
+          <div class="input-group mb-3">
+            <%= f.search_field :name_cont, class: "form-control" %>
+            <div class="input-group-append">
+              <%= f.submit "Search", class: "input-group-text" %>
+            </div>
+          </div>
+        <% end %>
+        <%= will_paginate @trainees, param_name: "trainee_page" %>
+        <ul class="list-group">
+          <% @trainees.each do |trainee| %>
+            <li class="list-group-item">
+              <button class = "btn btn-sm btn-success">+</button> |
+              <%= trainee.name %>
+            </li>
+          <% end %>
+        </ul>
       </div>
     </div>
   </div>
