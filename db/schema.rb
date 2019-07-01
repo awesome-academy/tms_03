@@ -16,8 +16,8 @@ ActiveRecord::Schema.define(version: 2019_06_24_031632) do
     t.integer "course_id", null: false
     t.integer "subject_id", null: false
     t.boolean "status", default: true, null: false
-    t.date "start_date", default: "2019-06-27"
-    t.date "finish_date", default: "2019-07-02"
+    t.date "start_date", default: "2019-07-01"
+    t.date "finish_date", default: "2019-07-06"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 2019_06_24_031632) do
     t.integer "created_by", null: false
     t.text "description"
     t.integer "status", default: 0, null: false
-    t.date "start_date", default: "2019-06-27"
-    t.date "finish_date", default: "2019-08-26"
+    t.date "start_date", default: "2019-07-01"
+    t.date "finish_date", default: "2019-08-30"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
