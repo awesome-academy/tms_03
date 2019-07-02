@@ -3,6 +3,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.5.5"
 
+gem "awesome_print", "~> 1.8"
 gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.1.0", require: false
 gem "bootstrap", "~> 4.3.1"
@@ -40,6 +41,7 @@ group :test do
   gem "chromedriver-helper"
   gem "factory_bot_rails", "~> 5.0"
   gem "selenium-webdriver"
+  gem "shoulda-matchers"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]

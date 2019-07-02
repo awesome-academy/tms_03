@@ -50,6 +50,7 @@ GEM
     ast (2.4.0)
     autoprefixer-rails (9.6.0)
       execjs
+    awesome_print (1.8.0)
     bcrypt (3.1.13)
     bindex (0.7.0)
     bootsnap (1.4.4)
@@ -275,6 +276,8 @@ GEM
     selenium-webdriver (3.142.3)
       childprocess (>= 0.5, < 2.0)
       rubyzip (~> 1.2, >= 1.2.2)
+    shoulda-matchers (4.1.0)
+      activesupport (>= 4.2.0)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -331,6 +334,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print (~> 1.8)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.3.1)
@@ -354,6 +358,7 @@ DEPENDENCIES
   rubocop (~> 0.54.0)
   sass-rails (~> 5.0)
   selenium-webdriver
+  shoulda-matchers
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
